@@ -9,3 +9,11 @@ package-lock.json
 
 # Local Netlify folder
 .netlify
+
+# Ignore all video files
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.mkv
