@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 *:-webkit-autofill, *:-webkit-autofill:hover, *:-webkit-autofill:focus {
   -webkit-text-fill-color: var(--primary-font-color);
@@ -43,6 +44,14 @@ header .header-logo img {
 header nav {
   right: 64px;
 }
+header .menu-btn {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  header .menu-btn {
+    display: block;
+  }
+}
 header .nav-menu__link-list {
   display: flex;
   justify-content: center;
@@ -67,6 +76,14 @@ button {
 
 ul {
   list-style: none;
+}
+
+.social-media-links {
+  border: 2px dashed rgba(220, 20, 60, 0.75);
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .sr-only {

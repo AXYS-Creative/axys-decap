@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 
   // Autofill for form fields: input, textarea, select, etc. Feel free to delete if there are no forms
   &:-webkit-autofill,
@@ -46,6 +47,14 @@ header {
     right: $body-padding;
   }
 
+  .menu-btn {
+    display: none;
+
+    @include mq-max("md") {
+      display: block;
+    }
+  }
+
   .nav-menu {
     &__link-list {
       @include row-center;
@@ -71,4 +80,12 @@ button {
 
 ul {
   list-style: none;
+}
+
+//
+
+.social-media-links {
+  border: $test;
+  margin: 24px 0;
+  @include column-left;
 }

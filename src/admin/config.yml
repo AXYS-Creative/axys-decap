@@ -1,7 +1,7 @@
 backend:
   # Use netlify identity as backend
-  name: git-gateway
-  branch: master
+  name: "git-gateway"
+  branch: "master"
 media_folder: "src/static/img"
 public_folder: "/static/img"
 
@@ -34,32 +34,32 @@ collections:
         name: "items"
         file: "src/_data/navigation.yaml"
         fields:
-          - label: Nav Items
-            name: items
-            widget: list
+          - label: "Nav Items"
+            name: "items"
+            widget: "list"
             allow_add: false
             collapsed: false
             fields:
-              - { label: Title, name: text, widget: string }
-              - { label: URL, name: url, widget: string }
-      - label: "Quick Links"
+              - { label: "Title", name: "text", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+      - label: "Social Media"
         name: "links"
-        file: "src/_data/quicklinks.yaml"
+        file: "src/_data/social_media.yaml"
         fields:
-          - label: Nav Items
-            name: links
-            widget: list
+          - label: "Nav Items"
+            name: "links"
+            widget: "list"
             collapsed: false
             fields:
-              - { label: Title, name: title, widget: string }
-              - { label: URL, name: url, widget: string }
-              - { label: Description, name: desc, widget: string }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Image Source", name: "src", widget: "image" }
       - label: "Meta Settings"
         name: "settings"
         file: "src/_data/settings.yaml"
         fields:
-          - { label: Name, name: name, widget: string }
-          - { label: Author, name: author, widget: string }
-          - { label: URL, name: url, widget: string }
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Author", name: "author", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
     editor:
       preview: false
