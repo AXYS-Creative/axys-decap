@@ -19,15 +19,43 @@ html {
 body {
   background: var(--background-color);
   color: var(--primary-font-color);
+
+  & > * {
+    max-width: $content-width;
+    margin: auto;
+  }
 }
 
-nav {
-  border: $test;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: $content-width;
-  margin: auto;
+header {
+  & > * {
+    position: fixed;
+    top: $body-padding;
+  }
+
+  .header-logo {
+    @include row-center;
+    left: $body-padding;
+    width: 48px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  nav {
+    right: $body-padding;
+  }
+
+  .nav-menu {
+    &__link-list {
+      @include row-center;
+      gap: 12px;
+    }
+  }
+}
+
+section {
+  padding: $vertical-section-padding $horizontal-section-padding;
 }
 
 a {

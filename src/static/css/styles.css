@@ -21,14 +21,37 @@ body {
   background: var(--background-color);
   color: var(--primary-font-color);
 }
-
-nav {
-  border: 2px dashed rgba(220, 20, 60, 0.75);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+body > * {
   max-width: 1920px;
   margin: auto;
+}
+
+header > * {
+  position: fixed;
+  top: 64px;
+}
+header .header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 64px;
+  width: 48px;
+}
+header .header-logo img {
+  width: 100%;
+}
+header nav {
+  right: 64px;
+}
+header .nav-menu__link-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+section {
+  padding: 196px 148px;
 }
 
 a {

@@ -1,18 +1,16 @@
-<div class="{{ 'lg:fixed' if path == 'home' }}">
-  <nav>
-    <!--Logo etc-->
-    <div class="">
-      <a href="/" class=""> Logo</a>
-    </div>
+<header>
+  <a href="/" class="header-logo">
+    <img src="../../static/img/axys-decap-logo-light.svg" alt="" />
+  </a>
 
-    <!--Toggle button (hidden on large screens)-->
-    <button type="button" class="" aria-label="Menu">click me</button>
+  <nav>
+    <button class="menu-btn" aria-label="Menu" type="button">X</button>
 
     <!--Menu-->
     <div class="nav-menu">
       {% if navigation.items %}
 
-      <ul class="">
+      <ul class="nav-menu__link-list">
         {% for item in navigation.items %}
         <li class="">
           <a class="" href="{{ item.url }}">{{ item.text }}</a>
@@ -23,4 +21,4 @@
       {% endif %}
     </div>
   </nav>
-</div>
+</header>

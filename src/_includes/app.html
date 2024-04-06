@@ -15,8 +15,10 @@
   </head>
   <body>
     <!-- prettier-ignore -->
-    {% include "./partials/navbar.html" %} 
-      {{ content | safe }} 
+    {% include "./partials/header.html" %}
+
+    <main>{{ content | safe }}</main>
+
     {%include "./partials/footer.html" %}
     <!-- prettier-ignore -->
 
