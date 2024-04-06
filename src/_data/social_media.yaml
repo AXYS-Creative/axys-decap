@@ -2,3 +2,6 @@ links:
   - title: Test
     url: testing
     src: ./
+  - title: Facebook
+    url: https://google.com
+    src: /static/img/icon-facebook.svg
